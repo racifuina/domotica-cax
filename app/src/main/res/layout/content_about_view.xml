@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="domotica_cax.abdesigns.com.domotica_cax.com.abdesigns.domotica_cax.AboutView"
+    tools:showIn="@layout/activity_about_view">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:src="@drawable/ic_logo_cax" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/logoImage"
+                android:padding="8dp"
+                android:id="@+id/infoTextView"
+                android:text="App creada para explicar los principios de la domótica en la Comunidad Arduino Xela\n\nCreada por:\n\nRigoberto Acifuina\nhttp://rigoberto.acifuina.com\n\nComunidad Arduino Xela:\nhttps://www.facebook.com/comunidadarduinoxela\n\nEste proyecto es Open-Source y el código fuente esta disponible en:\nhttps://github.com/racifuina/domotica-cax"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
